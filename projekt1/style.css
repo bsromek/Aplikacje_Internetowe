@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
       background: url('background.png');
       background-size: cover;
@@ -82,4 +83,61 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+=======
+html {
+      background: url('background.png');
+      background-size: cover;
+      background-position: center center;
+}
+  
+body {
+      color: #ffffff;
+      font-family: 'Times New Roman';
+      height: 100vh;
+      margin: 0;
+}
+  
+.main-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+}
+  
+.nav-container {
+      background-color: #000000;
+      width: 15%;
+      display: flex;
+      align-items: center;
+}
+  
+.panel-container {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+}
+
+.header-container {
+      background-color: #222222;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.section-container {
+      background-color: #111111;
+      height: 95%;
+      padding-top: 10px;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+}
+  
+.footer-container {
+      background-color: #222222;
+      height: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+>>>>>>> 356f7a26cc33c174720c96a6aa47b47307f40e45
 }

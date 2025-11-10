@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //NAWIGACJA
 
 function menu(container, button) {
@@ -79,3 +80,8 @@ const container = document.getElementById('content1');
 const buttons = container.querySelectorAll('button');
 buttons.forEach(btn => btn.addEventListener('click',e => clickButton(e.target)));
 randomizeBoard(buttons);
+=======
+setTimeout(() => {
+    console.log('Test JS')
+}, 4000)
+>>>>>>> 356f7a26cc33c174720c96a6aa47b47307f40e45
