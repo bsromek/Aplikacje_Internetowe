@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lights Out - Łamigłówka</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="icon.png">
+  </head>
+  <body>
+    <main class="main-container">
+      <nav class="nav-container">
+        <img src="icon.png" style="width: 200px;">
+        <button id="button1">HOME</button>
+        <button id="button2">KONTAKT</button>
+        <button id="button3">GALERIA</button>
+      </nav>
+      <div class="panel-container">
+        <header class="header-container">
+          <h1>Lights Out - Łamigłówka</h1>
+        </header>
+        <section class="section-container">
+
+          <!-- HOME -->
+
+          <div id="content1" class="main">
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 50%; text-align: justify;">
+                <h1>Witaj!</h1>
+                <p>Lights Out to łamigłówka składająca się z siatki przycisków o wymiarach 5x5.
+                  Każdy z nich umożliwia włączenie lub wyłączenie światła.
+                  Kliknięcie dowolnego przycisku powoduje zmianę jego stanu oraz stanu jego sąsiadów.
+                  Celem łamigłówki jest wyłączenie wszystkich świateł, wykonując jak najmniej kliknięć.</p>
+                <p>Odświeżenie strony spowoduje włączenie losowo wybranych świateł.
+                  W obecnej implementacji każda konfiguracja początkowa jest możliwa do rozwiązania.</p>
+                <p>Liczba kliknięć: <span id="click-counter">0</span></p>
+              </div>
+              <div style="padding-top: 80px; gap: 5px; display: flex; flex-direction: column;">
+                <div style="display: flex; gap: 5px;">
+                  <button id="11"></button>
+                  <button id="21"></button>
+                  <button id="31"></button>
+                  <button id="41"></button>
+                  <button id="51"></button>
+                </div>
+                <div style="display: flex; gap: 5px;">
+                  <button id="12"></button>
+                  <button id="22"></button>
+                  <button id="32"></button>
+                  <button id="42"></button>
+                  <button id="52"></button>
+                </div>
+                <div style="display: flex; gap: 5px;">
+                  <button id="13"></button>
+                  <button id="23"></button>
+                  <button id="33"></button>
+                  <button id="43"></button>
+                  <button id="53"></button>
+                </div>
+                <div style="display: flex; gap: 5px;">
+                  <button id="14"></button>
+                  <button id="24"></button>
+                  <button id="34"></button>
+                  <button id="44"></button>
+                  <button id="54"></button>
+                </div>
+                <div style="display: flex; gap: 5px;">
+                  <button id="15"></button>
+                  <button id="25"></button>
+                  <button id="35"></button>
+                  <button id="45"></button>
+                  <button id="55"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KONTAKT -->
+
+          <div id="content2" class="main" style="display: none;">
+            <h1>Kontakt</h1>
+            <form action="" method="get" target="">
+              <label for="e-mail">E-Mail</label><br>
+              <input type="email" id="e-mail" name="e-mail" placeholder="Podaj swój adres e-mail." style="width: 200px;" required><br><br>
+              <label for="temat">Temat</label><br>
+              <select id="temat" name="temat">
+                <option value="Pytanie">Pytanie</option>
+                <option value="Sugestia">Sugestia</option>
+                <option value="Zgłoszenie">Zgłoszenie</option>
+                <option value="Inne">Inne</option>
+              </select><br><br>
+              <label for="wiadomosc">Wiadomość</label><br>
+              <textarea id="wiadomosc" name="wiadomosc" placeholder="Wpisz treść wiadomości." style="resize: none; width: 80%; height: 200px;" required></textarea><br><br>
+              <input type="submit" value="Wyślij" style="font-size: 20px; width: 100px;">
+            </form>
+          </div>
+
+          <!-- GALERIA -->
+
+          <div id="content3" class="main" style="display: none;">
+            <h1>Galeria</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="gallery1.png" style="width: 600px;">
+                <p>Opis strategii "Light chasing"</p>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="gallery2.png" style="width: 300px;">
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="gallery3.png" style="width: 300px;">
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <video src="gallery4.mp4" style="width: 600px; border: 3px solid;" controls></video>
+                <p>Pokaz rozwiązania strategią "Light chasing"</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <footer class="footer-container">
+          <a href="https://bsromek.github.io" style="color: #FFFFFF">Bartłomiej Sromek</a>
+        </footer>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
