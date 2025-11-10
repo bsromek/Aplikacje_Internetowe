@@ -1,0 +1,85 @@
+html {
+      background: url('background.png');
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-y: scroll;
+}
+  
+body {
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0;
+}
+
+.main-container {
+      min-width: 1200px;
+      display: flex;
+      justify-content: center;
+}
+  
+.nav-container {
+      background-color: #000000;
+      height: 100vh;
+      gap: 20px;
+      top: 0;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+}
+
+.nav-container button {
+      background-color: #333333;
+      color: #ffffff;
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      font-weight: bold;
+      height: 40px;
+      border: 0;
+      cursor: pointer;
+}
+
+.nav-container button:hover {
+      background-color: #222222;
+}
+
+.nav-container button.active {
+      background-color: #999999;
+      color: #000000;
+}
+  
+.panel-container {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+}
+
+.header-container {
+      background-color: #222222;
+      display: flex;
+      justify-content: center;
+}
+
+.section-container {
+      background-color: #111111;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      flex: 1;
+}
+
+.section-container button {
+      background-color: #333333;
+      width: 80px;
+      height: 80px;
+      border: 0;
+}
+
+.footer-container {
+      background-color: #222222;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
