@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="zadanie_domowe.css">
+  </head>
+  <body>
+    <div class="game-container" id="gameRoot">
+      <div class="bg"></div>
+      <canvas id="game" width="400" height="600"></canvas>
+      <div class="score" id="score">0</div>
+      <div class="overlay" id="startScreen">
+        <img src="assets/UI/message.png" class="msg-img" alt="Start Message">
+      </div>
+      <div class="overlay hidden" id="gameOverScreen">
+        <img src="assets/UI/gameover.png" class="gameover-img" alt="Game Over">
+        <div class="results">
+          <div>Twój wynik: <span id="lastScore">0</span></div>
+          <br>
+          <div>Najlepsze wyniki:</div>
+          <ol id="bestList"></ol>
+        </div>
+        <button class="btn" id="retryBtn">Zagraj ponownie</button>
+      </div>
+    <script src="zadanie_domowe.js"></script>
+  </body>
+</html>
